@@ -8,15 +8,17 @@ const routes = [
     ]
   },
   {
-    path: '/functionalities',
+    path: '/funcionalidades',
     component: () => import('layouts/MainLayout'),
     children: [
       {
         path: '',
+        name: 'functionalities',
         component: () => import('pages/Funcionality/Index')
       },
       {
-        path: 'new',
+        path: 'novo',
+        name: 'functionalitiesNew',
         component: () => import('pages/Funcionality/New')
       },
     ]

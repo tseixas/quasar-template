@@ -27,7 +27,7 @@
             padding="md"
             label="TODAS AS FUNCIONALIDADES"
             class="q-px-md"
-            to="/functionalities"
+            :to="{ name: 'functionalities'}"
           />
         </div>
       </div>
@@ -46,7 +46,7 @@
       icon="east"
       class="mobile-only q-mt-md"
       label="TODAS AS FUNCIONALIDADES"
-      to="/functionalities"
+      :to="{ name: 'functionalities'}"
     />
   </div>
 </template>
