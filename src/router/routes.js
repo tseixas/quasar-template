@@ -15,6 +15,10 @@ const routes = [
         path: '',
         component: () => import('pages/Funcionality/Index')
       },
+      {
+        path: 'new',
+        component: () => import('pages/Funcionality/New')
+      },
     ]
   },
   {
