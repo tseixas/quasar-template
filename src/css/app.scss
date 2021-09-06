@@ -1,6 +1,5 @@
 body {
-  background-color: $gray-light-shade;
-  padding: 50px 150px 50px 150px;
+  background-color: $gray-light-1;
 }
 
 @media (max-width: $breakpoint-sm-max) {
@@ -9,12 +8,20 @@ body {
   }
 }
 
+.pd-body {
+  padding: 50px 150px 50px 150px;
+}
+
 .ubuntu-font {
   font-family: $font-ubuntu;
 }
 
 .bg-primary-dark {
   background-color: $primary-dark;
+}
+
+.bg-gray-light-2 {
+  background-color: $gray-light-2;
 }
 
 .text-primary-dark {
