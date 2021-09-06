@@ -1,36 +1,46 @@
-# Quasar App (quasar_template)
+# Quasar template
 
-A Quasar Framework app
+Simple responsive template with home page and listing.
 
-## Install the dependencies
+### Features
+
+- Home page
+- List manager and member functionality
+- Create new functionality
+
+### Prerequisites
+
+You will need to have the following tools installed:
+[Node.js](https://nodejs.org/en/).
+[Yarn](https://nodejs.org/en/).
+
+### Running
+
 ```bash
-yarn
+# Clone this repository
+$ git clone <https://github.com/tseixas/quasar-template.git>
+
+# Access the project folder in the terminal/cmd
+$ cd quasar-template
+
+# Install dependencies
+$ yarn add
+
+# Run the application in development mode
+$ yarn start
+
+# The server will start on port:8080 - go to <http://localhost:8080>
 ```
 
-### Start json-server
-```bash
-json-server --watch db.json 
-```
+### Technologies used
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
-quasar dev
-```
+- [Node.js](https://nodejs.org/en/)
+- [Yarn](https://yarnpkg.com/)
+- [Quasar framework](https://quasar.dev/)
+- [Vuelidate](https://vuelidate.js.org/)
+- [JSON server](https://github.com/typicode/json-server)
+- [Axios](https://axios-http.com/)
 
-### Start all
-```bash
-yarn start
-```
 
-### Lint the files
-```bash
-yarn run lint
-```
-
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.conf.js](https://v2.quasar.dev/quasar-cli/quasar-conf-js).
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
