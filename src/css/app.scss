@@ -1,1 +1,43 @@
-// app global css in SCSS form
+body {
+  background-color: $gray-light-shade;
+  padding: 50px 150px 50px 150px;
+}
+
+@media (max-width: $breakpoint-sm-max) {
+  body {
+    padding: 30px;
+  }
+}
+
+.ubuntu-font {
+  font-family: $font-ubuntu;
+}
+
+.bg-primary-dark {
+  background-color: $primary-dark;
+}
+
+.text-primary-dark {
+  color: $primary-dark;
+}
+
+.blue-dark {
+  color: $primary-dark;
+}
+
+.gray-ligth {
+  color: $gray-light;
+}
+
+.q-btn--outline {
+  border: 1px solid;
+}
+
+.q-field--outlined .q-field__control:before {
+  border: 1px solid $primary-dark;
+}
+
+.card-size {
+  width: 28%;
+  margin-right: 15%;
+}
