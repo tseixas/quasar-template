@@ -60,7 +60,12 @@
           />
 
           <label class="text-weight-light blue-dark"> Icone(nome) </label>
-          <q-input class="q-mb-lg" outlined v-model="icon" />
+          <q-input
+            class="q-mb-lg"
+            outlined
+            v-model="icon"
+            :error="v$.icon.$error"
+          />
 
           <label class="text-weight-light blue-dark"> Descrição </label>
           <q-input
@@ -87,6 +92,7 @@
 <script>
 import useVuelidate from "@vuelidate/core";
 import { required } from "@vuelidate/validators";
+import { api } from 'boot/axios'
 
 export default {
   name: "Nova Funcionalidade",
@@ -110,16 +116,18 @@ export default {
       title: {
         required,
       },
+      icon: {
+        required,
+      },
       description: {
         required,
       },
     };
   },
   methods: {
-    onSubmit() {
-      console.log(this.v$);
-
+    async onSubmit() {
       this.v$.$touch();
+
       if (this.v$.$invalid) {
         return;
       }
@@ -127,13 +135,17 @@ export default {
       const data = {
         title: this.title,
         icon: this.icon,
-        description: this.description,
-        type: this.manager ? "manager" : "member",
+        description: this.description
       };
 
-      console.log("send", data);
+      let url = this.manager ? '/managers' : '/members';
 
-      // evt.target.submit();
+      try {
+        const response = await api.post(url, data);
+        console.log(response);
+      } catch (error) {
+        console.error(error);
+      }
     },
   },
 };
