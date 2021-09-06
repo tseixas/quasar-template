@@ -6,6 +6,7 @@
   "author": "Thiago Seixas",
   "private": true,
   "scripts": {
+    "start": "concurrently \"json-server --watch db.json\" \"quasar dev\"",
     "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0"
   },
@@ -21,10 +22,12 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.13.14",
     "@quasar/app": "^3.0.0",
+    "concurrently": "^6.2.1",
     "eslint": "^7.14.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-vue": "^7.0.0",
-    "eslint-webpack-plugin": "^2.4.0"
+    "eslint-webpack-plugin": "^2.4.0",
+    "json-server": "^0.16.3"
   },
   "browserslist": [
     "last 10 Chrome versions",
