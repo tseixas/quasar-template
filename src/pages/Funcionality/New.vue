@@ -13,14 +13,14 @@
     <div
       class="row"
       :class="$q.screen.lt.md ? 'flex justify-between' : ''"
-      style="width: 85%"
+      :style="$q.screen.lt.md ? 'width: 100%' : 'width: 60%'"
     >
       <div class="col-md-3 col-sm-6">
         <q-btn
           :outline="!manager"
           color="primary-dark"
           size="15px"
-          :class="$q.screen.lt.md ? 'q-px-md' : 'q-px-xl'"
+          :class="$q.screen.lt.md ? 'q-px-md' : ''"
           class="q-py-xs"
           :label="$q.screen.lt.md ? 'como gestor' : 'funcionalidade gestor'"
           @click="
@@ -34,7 +34,7 @@
           :outline="!member"
           color="primary-dark"
           size="15px"
-          :class="$q.screen.lt.md ? 'q-px-md' : 'q-px-xl'"
+          :class="$q.screen.lt.md ? 'q-px-md' : ''"
           class="q-py-xs"
           :label="$q.screen.lt.md ? 'como membro' : 'funcionalidade membro'"
           @click="
