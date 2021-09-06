@@ -37,26 +37,34 @@
       </div>
     </div>
 
-    <Manager v-if="manager" />
-    <Member v-if="member" />
+    <Card v-if="manager" :data="listFunctionalityManager" />
+    <Card v-if="member" :data="listFunctionalityMember" />
   </q-page>
 </template>
 
 <script>
-import Manager from "src/pages/Funcionality/Manager.vue";
-import Member from "src/pages/Funcionality/Member.vue";
+import Card from "src/pages/Funcionality/Card.vue";
+import { api } from 'boot/axios'
 
 export default {
   name: "Funcionalidades",
   components: {
-    Manager,
-    Member,
+    Card,
   },
   data() {
     return {
       manager: true,
       member: false,
+      listFunctionalityManager: [],
+      listFunctionalityMember: []
     };
   },
+  async created() {
+    const responseManager = await api.get('/managers');
+    const responseMember = await api.get('/members');
+
+    this.listFunctionalityManager = responseManager.data;
+    this.listFunctionalityMember = responseMember.data;
+  }
 };
 </script>
