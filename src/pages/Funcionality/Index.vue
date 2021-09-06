@@ -39,6 +39,22 @@
 
     <Card v-if="manager" :data="listFunctionalityManager" />
     <Card v-if="member" :data="listFunctionalityMember" />
+
+    <div class="row" :class="$q.screen.lt.md ? 'flex justify-between' : ''">
+      <div class="col-md-2 col-sm-6">
+        <q-btn
+          v-if="(!listFunctionalityManager.length && manager) || (!listFunctionalityMember.length && member)"
+          outline
+          color="primary-dark"
+          size="15px"
+          :class="$q.screen.lt.md ? 'q-px-md' : 'q-px-xl'"
+          class="q-py-xs"
+          label="nova funcionalidade"
+          :to="{ name: 'functionalitiesNew'}"
+        />
+      </div>
+    </div>
+
   </q-page>
 </template>
 
