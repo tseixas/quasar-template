@@ -92,7 +92,8 @@
 <script>
 import useVuelidate from "@vuelidate/core";
 import { required } from "@vuelidate/validators";
-import { api } from 'boot/axios'
+import { api } from 'boot/axios';
+import { Notify } from 'quasar';
 
 export default {
   name: "Nova Funcionalidade",
@@ -125,6 +126,10 @@ export default {
     };
   },
   methods: {
+    resetForm() {
+        Object.assign(this.$data, this.$options.data())
+        this.v$.$reset();
+    },
     async onSubmit() {
       this.v$.$touch();
 
@@ -141,10 +146,13 @@ export default {
       let url = this.manager ? '/managers' : '/members';
 
       try {
-        const response = await api.post(url, data);
-        console.log(response);
+        await api.post(url, data);
+
+        this.resetForm();
+
+        Notify.create('Salvo com sucesso!');
       } catch (error) {
-        console.error(error);
+        Notify.create('Ops... Algo deu errado!');
       }
     },
   },
