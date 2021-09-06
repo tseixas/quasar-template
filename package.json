@@ -11,8 +11,11 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
+    "@vuelidate/core": "^2.0.0-alpha.25",
+    "@vuelidate/validators": "^2.0.0-alpha.21",
     "core-js": "^3.6.5",
-    "quasar": "^2.0.0"
+    "quasar": "^2.0.0",
+    "vuelidate": "^0.7.6"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.13.14",
