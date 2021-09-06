@@ -7,9 +7,16 @@ const routes = [
       { path: '', component: () => import('pages/Index.vue') }
     ]
   },
-
-  // Always leave this as last one,
-  // but you can also remove it
+  {
+    path: '/functionalities',
+    component: () => import('layouts/MainLayout'),
+    children: [
+      {
+        path: '',
+        component: () => import('pages/Funcionality/Index')
+      },
+    ]
+  },
   {
     path: '/:catchAll(.*)*',
     component: () => import('pages/Error404.vue')
