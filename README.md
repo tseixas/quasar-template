@@ -5,8 +5,8 @@ Simple responsive template with home page and listing.
 ### Features
 
 - Home page
-- List manager and member functionality
-- Create new functionality
+- List manager and member functionality - ```/funcionalidades```
+- Create new functionality - ```/funcionalidades/novo```
 
 ### Prerequisites
 
