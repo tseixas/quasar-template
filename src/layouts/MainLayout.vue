@@ -8,14 +8,6 @@
       </div>
     </div>
 
-    <!-- <q-header class="bg-light-shade q-mt-lg">
-      <q-toolbar>
-        <q-btn flat to="/">
-          <img alt="logo" src="~assets/Logo.svg" style="width: 280px" />
-        </q-btn>
-      </q-toolbar>
-    </q-header> -->
-
     <q-page-container>
       <router-view />
     </q-page-container>
