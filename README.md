@@ -21,7 +21,7 @@ You will need to have the following tools installed:
 $ git clone <https://github.com/tseixas/quasar-template.git>
 
 # Access the project folder in the terminal/cmd
-$cd quasar-template
+$ cd quasar-template
 
 # Install dependencies
 $ yarn add
