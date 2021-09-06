@@ -1,7 +1,7 @@
 <template>
   <div :class="$q.screen.lt.md ? 'column' : 'row'">
     <div class="col-4 flex itens-center">
-      <div class="row">
+      <div class="row q-mt-xl">
         <div class="col">
           <h4 class="text-h4 ubuntu-font text-weight-bolder">
             Faça a Gestão da sua comunidade de uma forma simples e completa
@@ -23,7 +23,6 @@
           <q-btn
             color="primary-dark"
             icon="login"
-            size="md"
             padding="md"
             label="TODAS AS FUNCIONALIDADES"
             class="q-px-md"
@@ -44,7 +43,7 @@
     <q-btn
       color="primary-dark"
       icon="east"
-      class="mobile-only q-mt-md"
+      class="mobile-only q-mt-lg"
       label="TODAS AS FUNCIONALIDADES"
       :to="{ name: 'functionalities'}"
     />
