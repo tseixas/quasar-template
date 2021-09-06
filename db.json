@@ -1,0 +1,96 @@
+{
+  "managers": [
+    {
+      "id": 1,
+      "title": "CONTROLE DE MEMBROS",
+      "description": "Visualização do perfil de todos os membros da comunidade. Filtragem por status.  Possibilidade de encontrar novas oportunidades de negócios.",
+      "icon": "person"
+    },
+    {
+      "id": 2,
+      "title": "AGENDAMENTO DE MENTORIAS",
+      "description": "Possibilidade de realizar agendamento com mentores. Os empreendedores podem disponibilizar alguns horários e auxiliar outros empreenderes de sua comunidade.",
+      "icon": "people"
+    },
+    {
+      "id": 3,
+      "title": "NEGÓCIOS DISPONÍVEIS",
+      "description": "Os membros podem incluir seus negócios, e podem visualizar todos os negócios da comunidade. ",
+      "icon": "store"
+    },
+    {
+      "id": 4,
+      "title": "COMISSÕES POR LEAD",
+      "description": "Aqui cada membro pode pagar comissão para outro, caso traga leads e indique seus negócios. Cada membro tem sua própria gestão de indicações em seu perfil.",
+      "icon": "credit_card"
+    },
+    {
+      "id": 5,
+      "title": "CLUBE DESCONTOS / BENEFÍCIOS",
+      "description": "Ferramenta com possibilidade de gestão de descontos e benefícios para associados.",
+      "icon": "workspace_premium"
+    },
+    {
+      "id": 6,
+      "title": "FEED DE NOTÍCIAS ABERTO",
+      "description": "Uma timeline onde tudo acontece, qualquer um pode postar seus negócios, eventos, oportunidades de emprego, o que você vende e o que quer comprar. Os conteúdos podem ou não ser liberador por um administrador.",
+      "icon": "chat"
+    },
+    {
+      "id": 7,
+      "title": "AGENDAMENTO DE SALAS",
+      "description": "Nunca mais os gestores precisam perder tempo organizando a agenda das salas. Agora os próprios membros selecionam na plataforma a sala desejada, e só precisam de um gestor interno para aprovar.",
+      "icon": "event"
+    },
+    {
+      "id": 8,
+      "title": "ACESSO A CONTEÚDOS",
+      "description": "Possibilidade de fazer up-load de todos os documentos que possam ser solicitados por membros da comunidade.  Atas de reuniões, documentos e formulários podem ser liberados pelos gestores da plataforma.",
+      "icon": "folder"
+    }
+  ],
+  "members": [
+    {
+      "id": 1,
+      "title": "CONEXÕES",
+      "description": "Acredito que aqui todos sabem que contatos é muito importante. Aqui se é membro, tem acesso a todos os demais contatos que participam dentro da comunidade privada.",
+      "icon": "public"
+    },
+    {
+      "id": 2,
+      "title": "MENTORIAS",
+      "description": "Qualquer membro pode se disponibilizar para ser um mentor. Basta ter um conteúdo interessante para compartilhar e pronto, você mesmo cria seu perfil de mentor e se convida junto a comunidade.",
+      "icon": "school"
+    },
+    {
+      "id": 3,
+      "title": "NEGÓCIOS DISPONIVEIS",
+      "description": "Os negócios são cadastrados por cada membro, através do seu perfil privado e ali você terá acesso aos demais negócios.",
+      "icon": "work"
+    },
+    {
+      "id": 4,
+      "title": "COMISSÕES POR LEAD",
+      "description": "Este espaço o membro tem a oportunidade de pagar comissão para quem trouxer um Lead (cliente) e ganhar comissão por indicação de algum Lead (cliente).",
+      "icon": "attach_money"
+    },
+    {
+      "id": 5,
+      "title": "GRUPO DE TRABALHO",
+      "description": "Participar de uma associação já é legal, agora fazer parte de um grupo menor, onde possa interagir, somar forças, compartilhar e aprender é demais.",
+      "icon": "grid_view"
+    },
+    {
+      "id": 6,
+      "title": "AGENDA DE EVENTOS",
+      "description": "Esta parte é só para eventos. Futuramente nesta tela você poderá fazer a venda de inscrições diretamente por esta tela e organizar a lista de inscritos.",
+      "icon": "event"
+    },
+    {
+      "id": 7,
+      "title": "LISTA AMARELA DOS NEGÓCIOS",
+      "description": "Todas os negócios e empresas em um só lugar, podendo buscar por categorias de uma forma fácil.",
+      "icon": "list"
+    }
+  ]
+}
