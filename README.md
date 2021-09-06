@@ -7,9 +7,19 @@ A Quasar Framework app
 yarn
 ```
 
+### Start json-server
+```bash
+json-server --watch db.json 
+```
+
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
 ```bash
 quasar dev
+```
+
+### Start all
+```bash
+yarn start
 ```
 
 ### Lint the files
