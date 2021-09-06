@@ -8,7 +8,7 @@
     >
      <card-info
         :icon="info.icon"
-        :title="info.title"
+        :title="info.title.toUpperCase()"
         :description="info.description"
       />
   </div>
