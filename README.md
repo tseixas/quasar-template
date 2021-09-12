@@ -24,7 +24,7 @@ $ git clone <https://github.com/tseixas/quasar-template.git>
 $ cd quasar-template
 
 # Install dependencies
-$ yarn add
+$ yarn install
 
 # Run the application in development mode
 $ yarn start
